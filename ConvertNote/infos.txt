@@ -1,0 +1,12 @@
+Au lancement:
+MainWindow.xaml (frame1) charge la page Page1.xaml
+
+Le menu supérieur appartient à la fenêtre (MainWindow.xaml), est donc indépendant des frames
+
+Lors du clic sur A_propos:
+frame1 charge Page2.xaml (frame2)
+frame1 devient frame2
+
+Lors du clic sur retour:
+frame2 charge Page1.xaml (frame1)
+frame2 devient frame1

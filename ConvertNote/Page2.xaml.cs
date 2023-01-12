@@ -16,25 +16,19 @@ using System.Windows.Shapes;
 namespace ConvertNote
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Logique d'interaction pour Page2.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Page2 : Page
     {
-        public MainWindow()
+        public Page2()
         {
             InitializeComponent();
-            frame1.Content = new Page1();
         }
 
-        //Partie Menu (StackPanel)
-        private void CLOSE_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Close();
-        }
-
-        private void INFOS_Click(object sender, RoutedEventArgs e)
-        {
-            frame1.Content = new Page2();
+            frame2.Content = new Page1();
+            conteneur_frame2.Visibility = Visibility.Hidden; //supprime la frame actuelle
         }
     }
 }
